@@ -1,5 +1,6 @@
+/* General styling for body */
 body {
   background-color: #13072e;
-  font-family: "Poppins";
-  font-size: 14;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }

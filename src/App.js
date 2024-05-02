@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <NavHeader />
-        <SideHeader />
         <Routes></Routes>
+        <SideHeader />
       </Router>
     </div>
   );
