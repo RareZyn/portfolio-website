@@ -30,7 +30,7 @@ function Hero() {
               Final-year Software Engineering student at University of Malaya,
               passionate about building exceptional web and mobile applications.
               Currently seeking opportunities to gain valuable industry
-              experience and contribute to innovative projects.I will starting my career at February 2026
+              experience and contribute to innovative projects.I will starting my career in February 2026
             </p>
             <div className="hero-buttons">
               <Button variant="primary" href="#contact" className="cta-button">
@@ -78,7 +78,7 @@ function Hero() {
               <div className="profile-image">
                 {/* Placeholder for profile image - replace with actual image */}
                 <div className="image-placeholder">
-                  <img src="/Razin.jpg" alt="Razin Bin Nazarudin" />
+                  <img src="/Razin.webp" alt="Razin Bin Nazarudin" />
                 </div>
               </div>
             </div>
