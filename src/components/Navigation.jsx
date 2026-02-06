@@ -21,7 +21,7 @@ function Navigation() {
     <Navbar
       expand="lg"
       fixed="top"
-      className={`custom-navbar ${scrolled ? 'scrolled' : ''}`}
+      className={`custom-navbar ${scrolled ? "scrolled" : ""}`}
     >
       <Container>
         <Navbar.Brand href="#home" className="brand-name">
@@ -36,7 +36,7 @@ function Navigation() {
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link
-              href="/razin-resume.pdf"
+              href="/RESUME_RAZIN_SOFTWARE-ENGINEER.pdf"
               target="_blank"
               className="resume-button"
             >

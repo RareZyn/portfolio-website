@@ -148,6 +148,16 @@
   line-height: 1.6;
 }
 
+/* Hide Show More button and height restrictions on desktop */
+.show-more-btn {
+  display: none;
+}
+
+.timeline-responsibilities {
+  max-height: none;
+  overflow: visible;
+}
+
 /* Leadership Section */
 .leadership-section {
   margin-top: 80px;
@@ -242,46 +252,202 @@
     padding: 60px 0;
   }
 
+  /* Mobile Slider for Timeline */
   .timeline {
     padding: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .timeline::before {
-    left: 20px;
+    display: none;
+  }
+
+  .timeline-item {
+    flex: 0 0 85%;
+    max-width: 85%;
+    scroll-snap-align: start;
+    margin-bottom: 0;
   }
 
   .timeline-content {
-    padding-left: 60px;
+    width: 100%;
+    padding: 0;
   }
 
   .timeline-item.right .timeline-content {
-    padding-left: 60px;
+    padding: 0;
+    margin-left: 0;
   }
 
   .timeline-icon {
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    transform: none;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    margin: 0;
   }
 
   .timeline-card {
     padding: 20px;
+    padding-right: 75px;
+    position: relative;
+  }
+
+  .timeline-card::before {
+    display: none;
+  }
+
+  /* Collapsed state - limit height */
+  .timeline-responsibilities {
+    max-height: 140px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+  }
+
+  .timeline-responsibilities.expanded {
+    max-height: 1000px;
+  }
+
+  /* Show More Button */
+  .show-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .show-more-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--navy);
+    transform: translateY(-2px);
+  }
+
+  .show-more-btn svg {
+    font-size: 12px;
   }
 
   .timeline-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .timeline-company {
-    font-size: 16px;
-  }
-
-  .timeline-responsibilities li {
     font-size: 15px;
   }
 
+  .timeline-responsibilities li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .timeline::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .timeline::-webkit-scrollbar-track {
+    background: rgba(100, 255, 218, 0.05);
+    border-radius: 10px;
+  }
+
+  .timeline::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+  }
+
+  /* Leadership Cards Slider */
   .leadership-section {
     margin-top: 50px;
+  }
+
+  .leadership-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .leadership-cards > div {
+    flex: 0 0 75%;
+    max-width: 75%;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .leadership-cards::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .leadership-cards::-webkit-scrollbar-track {
+    background: rgba(100, 255, 218, 0.05);
+    border-radius: 10px;
+  }
+
+  .leadership-cards::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+  }
+
+  .leadership-card {
+    padding: 20px;
+  }
+
+  .leadership-card h4 {
+    font-size: 17px;
+  }
+
+  .leadership-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .leadership-cards > div {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+
+  .timeline-title {
+    font-size: 17px;
+  }
+
+  .timeline-company {
+    font-size: 14px;
+  }
+
+  .timeline-responsibilities li {
+    font-size: 13px;
   }
 }

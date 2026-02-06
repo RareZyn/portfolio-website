@@ -1,8 +1,18 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaBriefcase, FaRobot, FaCode, FaCloud } from 'react-icons/fa';
+import { FaBriefcase, FaRobot, FaCode, FaCloud, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { useState } from 'react';
 import './Experience.css';
 
 function Experience() {
+  const [expandedCards, setExpandedCards] = useState({});
+
+  const toggleCard = (index) => {
+    setExpandedCards(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   const experiences = [
     {
       title: 'Software Engineer Intern',
@@ -64,15 +74,28 @@ function Experience() {
                 <div className="timeline-icon">
                   {exp.icon}
                 </div>
-                <div className="timeline-card">
+                <div className={`timeline-card ${expandedCards[index] ? 'expanded' : ''}`}>
                   <span className="timeline-period">{exp.period}</span>
                   <h3 className="timeline-title">{exp.title}</h3>
                   <h4 className="timeline-company">{exp.company}</h4>
-                  <ul className="timeline-responsibilities">
+                  <ul className={`timeline-responsibilities ${expandedCards[index] ? 'expanded' : ''}`}>
                     {exp.responsibilities.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
                     ))}
                   </ul>
+                  {exp.responsibilities.length > 2 && (
+                    <button
+                      className="show-more-btn"
+                      onClick={() => toggleCard(index)}
+                      aria-label={expandedCards[index] ? "Show less" : "Show more"}
+                    >
+                      {expandedCards[index] ? (
+                        <>Show Less <FaChevronUp /></>
+                      ) : (
+                        <>Show More <FaChevronDown /></>
+                      )}
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -86,21 +109,21 @@ function Experience() {
               <div className="leadership-card">
                 <h4>Young Officer</h4>
                 <p>Reserve Officer Training Unit (ROTU)</p>
-                <span className="leadership-status">Current</span>
+                <span className="leadership-status">2023 - 2025</span>
               </div>
             </Col>
             <Col md={4} className="mb-3">
               <div className="leadership-card">
-                <h4>Head of Department</h4>
-                <p>Department of Intellect - Belia Harmoni</p>
-                <span className="leadership-status">Current</span>
+                <h4>Vice President</h4>
+                <p>Belia Harmoni</p>
+                <span className="leadership-status">2024 - 2025</span>
               </div>
             </Col>
             <Col md={4} className="mb-3">
               <div className="leadership-card">
                 <h4>Active Member</h4>
                 <p>Persatuan Komputer UM (PEKOM)</p>
-                <span className="leadership-status">Current</span>
+                <span className="leadership-status">2023 - 2024</span>
               </div>
             </Col>
           </Row>

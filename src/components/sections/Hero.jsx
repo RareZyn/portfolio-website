@@ -1,7 +1,7 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { ReactTyped } from 'react-typed';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import './Hero.css';
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { ReactTyped } from "react-typed";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import "./Hero.css";
 
 function Hero() {
   return (
@@ -16,9 +16,9 @@ function Hero() {
               <ReactTyped
                 strings={[
                   "Software Engineer",
+                  "Web Developer",
                   "Full-Stack Developer",
                   "Mobile App Developer",
-                  "Problem Solver",
                 ]}
                 typeSpeed={80}
                 backSpeed={50}
@@ -30,7 +30,8 @@ function Hero() {
               Final-year Software Engineering student at University of Malaya,
               passionate about building exceptional web and mobile applications.
               Currently seeking opportunities to gain valuable industry
-              experience and contribute to innovative projects.I will starting my career in February 2026
+              experience and contribute to innovative projects.I will starting
+              my career in February 2026
             </p>
             <div className="hero-buttons">
               <Button variant="primary" href="#contact" className="cta-button">
@@ -38,7 +39,7 @@ function Hero() {
               </Button>
               <Button
                 variant="outline-primary"
-                href="/razin-resume.pdf"
+                href="/RESUME_RAZIN_SOFTWARE-ENGINEER.pdf"
                 target="_blank"
                 className="resume-button-hero"
               >

@@ -51,7 +51,7 @@ function About() {
                 <Card.Text className="degree-details">
                   Software Engineering
                 </Card.Text>
-                <Card.Text className="education-year">2023 - Present</Card.Text>
+                <Card.Text className="education-year">2023 - 2026</Card.Text>
               </Card.Body>
             </Card>
           </Col>
