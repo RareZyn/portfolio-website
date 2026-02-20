@@ -27,11 +27,11 @@ function Hero() {
               />
             </h2>
             <p className="hero-description">
-              Final-year Software Engineering student at University of Malaya,
-              passionate about building exceptional web and mobile applications.
-              Currently seeking opportunities to gain valuable industry
-              experience and contribute to innovative projects.I will starting
-              my career in February 2026
+              Fresh graduate in Software Engineering from the University of
+              Malaya, passionate about building exceptional web and mobile
+              applications. Currently seeking opportunities to gain valuable
+              industry experience and contribute to innovative projects. I will
+              be starting my career in February 2026.
             </p>
             <div className="hero-buttons">
               <Button variant="primary" href="#contact" className="cta-button">
