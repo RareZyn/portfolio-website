@@ -1,6 +1,5 @@
 .contact-section {
-  padding: 100px 0;
-  min-height: 100vh;
+  padding: 60px 0;
   display: flex;
   align-items: center;
 }
@@ -12,24 +11,24 @@
 }
 
 .contact-title {
-  font-size: clamp(40px, 7vw, 60px);
+  font-size: clamp(26px, 5vw, 42px);
   color: var(--lightest-slate);
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .contact-description {
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
   color: var(--slate);
-  margin-bottom: 60px;
-  max-width: 700px;
+  margin-bottom: 36px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contact-methods {
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 }
 
 .contact-card {
@@ -39,7 +38,7 @@
   background-color: var(--secondary-bg);
   border: 1px solid var(--lightest-navy);
   border-radius: 8px;
-  padding: 40px 20px;
+  padding: 24px 16px;
   transition: var(--transition);
   text-decoration: none;
   height: 100%;
@@ -71,9 +70,9 @@
 }
 
 .contact-icon {
-  font-size: 48px;
+  font-size: 34px;
   color: var(--accent-color);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   transition: var(--transition);
 }
 
@@ -83,14 +82,14 @@
 }
 
 .contact-card h3 {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--lightest-slate);
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .contact-card p {
-  font-size: 16px;
+  font-size: 13px;
   color: var(--slate);
   margin: 0;
   word-break: break-word;
@@ -108,8 +107,8 @@
   background-color: transparent;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  padding: 18px 50px;
-  font-size: 18px;
+  padding: 12px 36px;
+  font-size: 14px;
   font-weight: 600;
   border-radius: 4px;
   transition: var(--transition);
@@ -128,67 +127,67 @@
 /* Responsive */
 @media (max-width: 991px) {
   .contact-section {
-    padding: 80px 0;
+    padding: 48px 0;
   }
 
   .contact-description {
-    font-size: 17px;
-    margin-bottom: 50px;
+    font-size: 14px;
+    margin-bottom: 28px;
   }
 
   .contact-methods {
-    margin-bottom: 50px;
+    margin-bottom: 28px;
   }
 
   .contact-card {
-    padding: 35px 20px;
+    padding: 20px 14px;
   }
 }
 
 @media (max-width: 767px) {
   .contact-section {
-    padding: 60px 0;
+    padding: 36px 0;
   }
 
   .contact-title {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
   }
 
   .contact-description {
-    font-size: 16px;
-    margin-bottom: 40px;
+    font-size: 13px;
+    margin-bottom: 24px;
   }
 
   .contact-methods {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   .contact-card {
-    padding: 30px 15px;
+    padding: 18px 12px;
   }
 
   .contact-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 
   .contact-card h3 {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .contact-card p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .cta-email-button {
-    padding: 16px 40px;
-    font-size: 16px;
+    padding: 10px 28px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
   .contact-card {
-    padding: 25px 15px;
+    padding: 16px 10px;
   }
 
   .cta-email-button {

@@ -54,22 +54,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(28px, 6vw, 56px);
   margin: 0;
 }
 
 h2 {
-  font-size: clamp(26px, 5vw, 32px);
+  font-size: clamp(20px, 4vw, 26px);
 }
 
 h3 {
-  font-size: clamp(20px, 4vw, 24px);
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 p {
   color: var(--slate);
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 a {
@@ -84,8 +84,7 @@ a:hover {
 
 /* Section Styling */
 section {
-  padding: 100px 0;
-  min-height: 100vh;
+  padding: 60px 0;
   display: flex;
   align-items: center;
 }
@@ -93,8 +92,8 @@ section {
 .section-title {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
-  font-size: clamp(26px, 5vw, 32px);
+  margin-bottom: 24px;
+  font-size: clamp(20px, 4vw, 26px);
   font-weight: 600;
   color: var(--lightest-slate);
 }
@@ -158,12 +157,11 @@ section {
 /* Responsive Typography */
 @media (max-width: 768px) {
   section {
-    padding: 80px 0;
-    min-height: auto;
+    padding: 48px 0;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .section-title::after {
@@ -173,11 +171,11 @@ section {
 
 @media (max-width: 480px) {
   section {
-    padding: 60px 0;
+    padding: 36px 0;
   }
 
   .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 
   .section-title::before {

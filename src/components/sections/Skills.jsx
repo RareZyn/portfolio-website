@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 import {
   FaJava,
   FaPython,
@@ -6,65 +6,79 @@ import {
   FaReact,
   FaNodeJs,
   FaAngular,
-  FaGitAlt,
+  FaGithub,
   FaDocker,
   FaFigma,
-  FaRaspberryPi
-} from 'react-icons/fa';
+  FaRaspberryPi,
+} from "react-icons/fa";
 import {
   SiMongodb,
   SiFirebase,
   SiCplusplus,
   SiArduino,
   SiCanva,
-  SiCisco
-} from 'react-icons/si';
-import './Skills.css';
+  SiCisco,
+  SiSpringboot,
+  SiEclipseide,
+  SiPostman,
+  SiN8N,
+} from "react-icons/si";
+import { RiSupabaseLine } from "react-icons/ri";
+import { BiLogoPostgresql } from "react-icons/bi";
+import "./Skills.css";
 
 function Skills() {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: "Programming Languages",
       skills: [
-        { name: 'Java', icon: <FaJava /> },
-        { name: 'Python', icon: <FaPython /> },
-        { name: 'JavaScript', icon: <FaJs /> },
-        { name: 'C', icon: <SiCplusplus /> },
-        { name: 'HTML/CSS', icon: <FaJs /> }
-      ]
+        { name: "Java", icon: <FaJava /> },
+        { name: "Python", icon: <FaPython /> },
+        { name: "JavaScript", icon: <FaJs /> },
+        { name: "C", icon: <SiCplusplus /> },
+        { name: "HTML/CSS", icon: <FaJs /> },
+      ],
     },
     {
-      title: 'Frameworks & Libraries',
+      title: "Frameworks & Libraries",
       skills: [
-        { name: 'React', icon: <FaReact /> },
-        { name: 'Node.js', icon: <FaNodeJs /> },
-        { name: 'Angular', icon: <FaAngular /> }
-      ]
+        { name: "React", icon: <FaReact /> },
+        { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Angular", icon: <FaAngular /> },
+        { name: "Springboot", icon: <SiSpringboot /> },
+        { name: "OSGI", icon: <SiEclipseide /> },
+      ],
     },
     {
-      title: 'Databases & Backend',
+      title: "Databases & Backend",
       skills: [
-        { name: 'MongoDB', icon: <SiMongodb /> },
-        { name: 'Firebase', icon: <SiFirebase /> }
-      ]
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "Firebase", icon: <SiFirebase /> },
+        { name: "Supabase", icon: <RiSupabaseLine /> },
+        { name: "Postgresql ", icon: <BiLogoPostgresql /> },
+      ],
     },
     {
-      title: 'Tools & Technologies',
+      title: "Tools & Technologies",
       skills: [
-        { name: 'Git', icon: <FaGitAlt /> },
-        { name: 'Docker', icon: <FaDocker /> },
-        { name: 'Arduino', icon: <SiArduino /> },
-        { name: 'Raspberry Pi', icon: <FaRaspberryPi /> },
-        { name: 'Figma', icon: <FaFigma /> },
-        { name: 'Canva', icon: <SiCanva /> }
-      ]
-    }
+        { name: "GitHub", icon: <FaGithub /> },
+        { name: "Docker", icon: <FaDocker /> },
+        { name: "Arduino", icon: <SiArduino /> },
+        { name: "Raspberry Pi", icon: <FaRaspberryPi /> },
+        { name: "Figma", icon: <FaFigma /> },
+        { name: "Canva", icon: <SiCanva /> },
+        { name: "Postman", icon: <SiPostman /> },
+        { name: "N8N", icon: <SiN8N /> },
+      ],
+    },
   ];
 
   return (
     <section id="skills" className="skills-section">
       <Container>
-        <h2 className="section-title" data-aos="fade-up">Skills & Technologies</h2>
+        <h2 className="section-title" data-aos="fade-up">
+          Skills & Technologies
+        </h2>
 
         <div className="skills-content">
           {skillCategories.map((category, categoryIndex) => (

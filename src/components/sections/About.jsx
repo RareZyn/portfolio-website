@@ -8,7 +8,7 @@ function About() {
       <Container>
         <h2 className="section-title" data-aos="fade-up">About Me</h2>
 
-        <Row className="about-content">
+        {/* <Row className="about-content">
           <Col lg={12} data-aos="fade-up" data-aos-delay="100">
             <div className="about-description">
               <p>
@@ -31,7 +31,7 @@ function About() {
               </p>
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <h3 className="education-title" data-aos="fade-up" data-aos-delay="200">
           Education

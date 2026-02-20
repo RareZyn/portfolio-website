@@ -1,9 +1,9 @@
 .projects-section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .projects-grid {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .project-card {
@@ -40,7 +40,7 @@
 }
 
 .project-card .card-body {
-  padding: 30px;
+  padding: 18px;
 }
 
 .featured-project {
@@ -55,12 +55,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
-  gap: 15px;
+  margin-bottom: 12px;
+  gap: 10px;
 }
 
 .project-title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--lightest-slate);
   margin: 0;
@@ -78,10 +78,10 @@
 }
 
 .project-description {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.6;
   color: var(--slate);
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -103,8 +103,8 @@
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
+  gap: 6px;
+  margin-bottom: 14px;
 }
 
 .tech-badge {
@@ -206,7 +206,7 @@
 .project-preview-link {
   display: block;
   position: relative;
-  height: 280px;
+  height: 200px;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
@@ -332,7 +332,7 @@
 
 .more-projects-note {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
 .more-projects-note p {
@@ -355,15 +355,15 @@
 /* Responsive */
 @media (max-width: 991px) {
   .projects-section {
-    padding: 80px 0;
+    padding: 48px 0;
   }
 
   .project-card .card-body {
-    padding: 25px;
+    padding: 16px;
   }
 
   .project-title {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .project-description {
@@ -374,7 +374,7 @@
 
 @media (max-width: 767px) {
   .projects-section {
-    padding: 60px 0;
+    padding: 36px 0;
   }
 
   /* Mobile Slider */
