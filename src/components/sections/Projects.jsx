@@ -4,6 +4,12 @@ import { useState, useEffect } from "react";
 import "./Projects.css";
 
 function Projects() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleDescription = (index) => {
+    setExpandedIndex((prev) => (prev === index ? null : index));
+  };
+
   // Image Carousel Component
   const ImageCarousel = ({ images, title }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -104,6 +110,21 @@ function Projects() {
       featured: true,
     },
     {
+      title: "Harmoni Malaysia - Student Organization Website",
+      description:
+        "Contributed to the development and maintenance of the official Harmoni Malaysia website, a national student organization under Ikram focused on holistic student development. The platform serves 1,400+ student members across 25 branches nationwide, featuring a membership registration portal, event management, branch locator, and activity showcase. Involved in full-stack development using the MERN stack, ensuring the site remains performant, up-to-date, and accessible to students across Malaysia.",
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "MERN Stack",
+        "Web Maintenance",
+      ],
+      demo: "https://www.harmonimalaysia.org.my/",
+      featured: true,
+    },
+    {
       title: "Shopizer - Component-Based E-Commerce Platform",
       description:
         "Architected a modular e-commerce platform leveraging advanced component-based software engineering principles with Spring Boot and OSGi framework. Implemented a highly scalable microservices architecture with dynamic module loading, service-oriented design, and loose coupling through OSGi bundles. The system demonstrates enterprise-level software architecture with hot-swappable components, dependency injection, and seamless integration of business logic modules, enabling flexible feature deployment and independent component lifecycle management without system downtime.",
@@ -130,8 +151,8 @@ function Projects() {
         <Row className="projects-grid">
           {projects.map((project, index) => (
             <Col
-              lg={project.featured ? 12 : 6}
-              md={12}
+              lg={6}
+              md={6}
               className="mb-4"
               key={index}
               data-aos="fade-up"
@@ -213,7 +234,12 @@ function Projects() {
                     )}
                   </div>
 
-                  <p className="project-description">{project.description}</p>
+                  <p
+                    className={`project-description ${expandedIndex === index ? "expanded" : ""}`}
+                    onClick={() => toggleDescription(index)}
+                  >
+                    {project.description}
+                  </p>
 
                   <div className="project-tech">
                     {project.technologies.map((tech, idx) => (

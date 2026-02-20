@@ -58,14 +58,6 @@ function Skills() {
         { name: 'Figma', icon: <FaFigma /> },
         { name: 'Canva', icon: <SiCanva /> }
       ]
-    },
-    {
-      title: 'Certifications & Others',
-      skills: [
-        { name: 'CCNA v7 NetCAD', icon: <SiCisco /> },
-        { name: 'Android Studio', icon: <FaJava /> },
-        { name: 'Microsoft Office', icon: <FaJs /> }
-      ]
     }
   ];
 

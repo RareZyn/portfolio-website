@@ -12,7 +12,7 @@ function About() {
           <Col lg={12} data-aos="fade-up" data-aos-delay="100">
             <div className="about-description">
               <p>
-                I'm a final-year Software Engineering student at the University of Malaya,
+                I'm a Fresh graduate Software Engineering student at the University of Malaya,
                 passionate about creating innovative solutions through technology. My journey
                 in software development has equipped me with strong technical skills and a
                 deep understanding of full-stack development.
