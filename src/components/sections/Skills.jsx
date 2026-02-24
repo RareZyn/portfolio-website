@@ -3,6 +3,7 @@ import {
   FaJava,
   FaPython,
   FaJs,
+  FaHtml5,
   FaReact,
   FaNodeJs,
   FaAngular,
@@ -10,6 +11,7 @@ import {
   FaDocker,
   FaFigma,
   FaRaspberryPi,
+  FaCss3,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -17,12 +19,13 @@ import {
   SiCplusplus,
   SiArduino,
   SiCanva,
-  SiCisco,
   SiSpringboot,
   SiEclipseide,
   SiPostman,
   SiN8N,
+  SiTypescript,
 } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
 import { RiSupabaseLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
 import "./Skills.css";
@@ -36,7 +39,10 @@ function Skills() {
         { name: "Python", icon: <FaPython /> },
         { name: "JavaScript", icon: <FaJs /> },
         { name: "C", icon: <SiCplusplus /> },
-        { name: "HTML/CSS", icon: <FaJs /> },
+        { name: "HTML", icon: <FaHtml5 /> },
+        { name: "CSS", icon: <FaCss3 /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Sql", icon: <TbSql /> },
       ],
     },
     {
