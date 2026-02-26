@@ -138,7 +138,16 @@ function Projects() {
       ],
       demo: "https://csbe-shopizer.vercel.app/",
       featured: true,
-    }
+    },
+    {
+      title: "PortManager",
+      description:
+        "A sleek Windows desktop app for developers to monitor and kill processes running on common development ports that built with C# and WinForms.",
+      technologies: ["C++", "AspNet Core"],
+      github: "https://github.com/RareZyn/PortManager",
+      images: ["PortKiller.webp", "icon_256x256.ico"],
+      featured: true,
+    },
   ];
 
   return (
