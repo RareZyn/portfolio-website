@@ -31,6 +31,13 @@
   justify-content: center;
 }
 
+.education-card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+}
+
 .education-card {
   background-color: var(--secondary-bg);
   border: 1px solid var(--lightest-navy);
