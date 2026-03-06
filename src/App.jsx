@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import Navigation from './components/Navigation';
-import Hero from './components/sections/Hero';
-import About from './components/sections/About';
-import Experience from './components/sections/Experience';
-import Projects from './components/sections/Projects';
-import Certificates from './components/sections/Certificates';
-import Skills from './components/sections/Skills';
-import Contact from './components/sections/Contact';
-import Footer from './components/Footer';
-import './App.css';
+import { useEffect } from "react";
+import AOS from "aos";
+import Navigation from "./components/Navigation";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
+import Projects from "./components/sections/Projects";
+import Certificates from "./components/sections/Certificates";
+import Skills from "./components/sections/Skills";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
+      {/* <Navigation />
       <main>
         <Hero />
         <About />
@@ -32,7 +32,8 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <Footer />
+      <Footer /> */}
+      <Hero />
     </div>
   );
 }

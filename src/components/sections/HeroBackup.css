@@ -202,8 +202,6 @@
 
   .hero-buttons {
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
   }
 
   .social-links {
@@ -237,9 +235,7 @@
   .cta-button,
   .resume-button-hero {
     width: 100%;
-    max-width: 180px;
-    font-size: 13px;
-    padding: 8px 16px;
+    max-width: 300px;
   }
 
   .social-links {
