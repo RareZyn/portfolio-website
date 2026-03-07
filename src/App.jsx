@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navigation />
+      <Navigation />
       <main>
         <Hero />
         <About />
@@ -32,8 +32,8 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <Footer /> */}
-      <Hero />
+      <Footer />
+  
     </div>
   );
 }
