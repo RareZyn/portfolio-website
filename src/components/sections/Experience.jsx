@@ -15,45 +15,25 @@ function Experience() {
 
   const experiences = [
     {
-      title: 'Software Engineer Intern',
-      company: 'WORQ',
-      period: 'July 2024 - January 2025',
+      title: "Software Engineer Intern",
+      company: "WORQ",
+      period: "July 2024 - January 2025",
       icon: <FaBriefcase />,
       responsibilities: [
-        'Developed a full-stack company website from scratch, ensuring responsive design and smooth backend integration',
-        'Maintained and optimized the company\'s existing WordPress platform for performance and security',
-        'Implemented automation using webhooks to streamline internal workflows and reduce manual tasks'
-      ]
+        "Developed a full-stack company website from scratch, ensuring responsive design and smooth backend integration",
+        "Maintained and optimized the company's existing WordPress platform for performance and security",
+        "Implemented automation using webhooks to streamline internal workflows and reduce manual tasks",
+      ],
     },
     {
-      title: 'ICT INOV',
-      company: 'University Event',
-      period: 'October 2023',
+      title: "Research Lab Assistant ",
+      company: "Dr. Raja Jamilah",
+      period: "Dec 2023 – Jan 2024",
       icon: <FaRobot />,
       responsibilities: [
-        'Showcased a 6-degree-of-freedom (6DOF) robotic arm to university students during Women Engineering Day',
-        'Explained features, applications, and functionality in the field of robotics'
-      ]
-    },
-    {
-      title: 'Programming League Nation',
-      company: 'Coding Competition',
-      period: 'May 2023',
-      icon: <FaCode />,
-      responsibilities: [
-        'Participated in a data structure coding championship',
-        'Successfully advanced to the final stage, demonstrating competence in algorithmic problem-solving'
-      ]
-    },
-    {
-      title: 'Google Cloud Platform For Everyone',
-      company: 'GCPE Workshop',
-      period: 'April 2023',
-      icon: <FaCloud />,
-      responsibilities: [
-        'Completed various exercises and a small project on Google Cloud Platform',
-        'Set up a gaming server and developed a website using GCP infrastructure'
-      ]
+        "Showcased a 6-degree-of-freedom (6DOF) robotic arm to university students during Women Engineering Day",
+        "Assisted in the reorganisation of the ICT laboratory for its transformation into the Cynex Lab",
+      ],
     }
   ];
 
